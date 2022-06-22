@@ -10,10 +10,14 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm install
+RUN npm install && npm install qrcode-terminal && npm install pm2 -g && pm2 log
 
 COPY . .
 
 EXPOSE 5000
 
 CMD ["node", "index.js"]
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
