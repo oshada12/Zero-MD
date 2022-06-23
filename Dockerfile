@@ -17,7 +17,3 @@ COPY . .
 EXPOSE 5000
 
 CMD ["node", "index.js"]
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
